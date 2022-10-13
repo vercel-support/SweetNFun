@@ -96,17 +96,6 @@ background-color: #fff;
 
 /* ///carousel start */
 
-/* *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
-} */
-/* body{
-min-height: 100vh;
-display: flex;
-align-items: center;
-} */
 .wrapper{
   width: 100%;
   margin: 0;
@@ -115,10 +104,6 @@ align-items: center;
   display: flex;
   justify-content: center;
   }
-  
-  /* .owl-stage{
-  height: 50vh;
-  } */
   
   .carousel{
   max-width: 300px;
@@ -134,7 +119,6 @@ align-items: center;
   /* height: 700px; */
   height: 200px;
   /* width: 85vw; */
-    /* display: flex; */
   align-items: center;
   
   color: #fff;
