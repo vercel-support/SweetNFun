@@ -6,14 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet N Fun Products Ltd. Website</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="/script.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  
 </head>
 <body>
     <div class="nav">
+        <input type="checkbox" id="menuIcon">
+        <label id="burger" for="menuIcon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+
+        <div id="menu">
+            <div class="directory mobile">
+                <a class="products"><img class='productsimg' src='imgs/products.png'/></a>
+                <a class="about"><img class='aboutimg' src='imgs/about.png'/></a>
+                <a class="contact"><img class='contactimg' src='imgs/contact.png'/></a>
+                <!-- <h4>Blog</h4> -->
+                <a class="search"><img class='searchimg' src='imgs/search.png'/></a>
+            </div>
+        </div>
         
-        
-        <div><a class="logo-container"><img class='logo' src='imgs/logo.png'/></a></div>
-        <div class="directory">
+        <div >
+            <a class="logo-container">
+                <img class='logo' src='imgs/logo.png'/>
+            </a>
+        </div>
+        <div class="directory desktop">
             <a class="products"><img class='productsimg' src='imgs/products.png'/></a>
             <a class="about"><img class='aboutimg' src='imgs/about.png'/></a>
             <a class="contact"><img class='contactimg' src='imgs/contact.png'/></a>
@@ -21,5 +43,36 @@
             <a class="search"><img class='searchimg' src='imgs/search.png'/></a>
         </div>
     </div>
+
+    
+<div class="hero wrapper">
+        
+
+  <div class="carousel owl-carousel">
+    
+    <div class="card card-1">
+    <img src="https://bit.ly/34xczKy">
+    </div>
+    <div class="card card-2">
+        <img src="https://bit.ly/3lkp5DW">
+    </div>
+    <div class="card card-3">
+        <img src="https://bit.ly/3iMHuI1">
+    </div>
+    <div class="card card-4">
+        <img src="https://bit.ly/34xczKy">
+    </div>
+    <div class="card card-5">
+        <img src="https://bit.ly/3lkp5DW">
+    </div>
+
+  </div>
+
+</div>
+
+          
+          
+    </div>
+    <script src="/script.js"> </script>
 </body>
 </html>
