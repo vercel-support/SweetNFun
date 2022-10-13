@@ -12,14 +12,3 @@ $(".carousel").owlCarousel({
         2000: { items: 5, nav: false },
     },
   });
-
-  function insertNumbers(carousel) {
-    const length = carousel.querySelectorAll(".item").length;
-    for (let i = 0; i < length; i++) {
-      const nmbr = document.createElement("div");
-      nmbr.classList.add("numbertext");
-      nmbr.innerText = i + 1 + " / " + length;
-  
-      carousel.querySelectorAll(".item")[i].append(nmbr);
-    }
-  }
