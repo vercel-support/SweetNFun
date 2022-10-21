@@ -116,7 +116,7 @@ background-color: #fff;
   
   .carousel{
   max-width: 300px;
-  /* min-width: 800px; */
+  /* min-width: 300px; */
   margin: auto;
   display: flex;
   justify-content: center;
@@ -164,8 +164,8 @@ background-color: #fff;
   }
   .owl-dot{
   height: 15px;
-  width: 45px;
-  margin: 5px 5px;
+  width: 15px;
+  margin: 5px 8px;
   outline: none;
   border-radius: 14px;
   border: 2px solid #0072bc!important;
@@ -193,6 +193,7 @@ background-color: #fff;
   color: #F987B6;
   animation: color-change 6s infinite;
 }
+
 /* @keyframes color-change {
   0% { color: #ED2227; }
   50% { color: #F987B6; }
@@ -205,9 +206,9 @@ background-color: #fff;
 
 /* ///popular products click slide start */
 .workers {
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
   display: flex;
-  justify-content: center;
+  justify-content: center !important  ;
 }
 
 .card img {
@@ -218,11 +219,11 @@ background-color: #fff;
 #wrapper {
   display: flex;
   width: 100%;
-  min-width: 290px;
+  min-width: 280px;
   max-width: 300px;
   position: relative;
   overflow: hidden;
-  justify-content: center;
+  justify-content: center !important;
 }
 
 #carousel {
@@ -252,14 +253,18 @@ background-color: #fff;
 }
 
 #prev {
-  left: -80px;
+  left: -33vw !important;
   transform: translate(50%, -50%);
   display: none;
 }
 
 #next {
-  left: 20px;
+  left: 45vw !important;
   transform: translate(-50%, -50%);
+}
+
+#slide-buttons{
+  margin: -40px;
 }
 
 #content {
@@ -283,6 +288,38 @@ background-color: #fff;
 /* popular products click slide end /// */
 /* popular products end /// */
   
+/* /// form submit start */
+.form-submit{
+  margin: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #000; */
+
+}
+
+.form-submit form{
+  /* margin: 30px; */
+  display: flex;
+  flex-direction: column;
+  
+  width:100%;
+
+}
+
+input, textarea{
+  margin: 10px;
+  padding: 1rem;
+}
+
+textarea{
+  height: 150px;
+  resize: vertical;
+}
+
+/* form submit end /// */
+
 
 @media screen and (min-width: 769px) {
 
@@ -392,28 +429,21 @@ display: flex;
 justify-content: center;
 }
 
-/* .owl-stage{
-height: 50vh;
-} */
-
 .carousel{
 max-width: 1200px;
-/* min-width: 800px; */
+min-width: 900px;
 margin: auto;
 padding: 0 30px;
+align-items: space-between;
 }
+
 .carousel .card{
-  
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
-/* height: 700px; */
-height: 70vh;
-  /* display: flex; */
-align-items: center;
-
 color: #fff;
-/* width: 500px; */
 text-align: center;
+height: 70vh;
+
 margin: 20px 0;
 line-height: 250px;
 font-size: 90px;
@@ -422,6 +452,9 @@ border-radius: 10px;
 /* box-shadow: 0px 4px 15px rgba(0,0,0,0.2); */
 }
 
+.carousel .card img{
+  height: 70vh;
+}
 
 .carousel .card-1{
 /* background: #ed1c24; */
@@ -459,6 +492,108 @@ background: #0072bc!important;
 }
 
 
-  /* carousel end/// */
+/* carousel end/// */
 
 }
+/* /// popular products start*/
+.pop-header{
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+.popular{
+  font-family: 'Gill Sans MT';
+  color: #F987B6;
+  animation: color-change 6s infinite;
+}
+
+/* @keyframes color-change {
+  0% { color: #ED2227; }
+  50% { color: #F987B6; }
+  100% { color: #ED2227; }
+} */
+
+.popular span{
+  color: #ED2227;
+}
+
+/* ///popular products click slide start */
+/* .workers {
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: center;
+} */
+
+.card img {
+  background-color: white;
+  border-radius: 15px;
+}
+
+/* #wrapper {
+  display: flex;
+  width: 100%;
+  min-width: 290px;
+  max-width: 300px;
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+} */
+
+/* #carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+} */
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  margin-top: -40px;
+  margin-left: 150px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  left: -80px;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
+#next {
+  left: 20px;
+  transform: translate(-50%, -50%);
+}
+
+#content {
+  display: grid;
+  grid-gap: 16px;
+  grid-auto-flow: column;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.item {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.card {
+  position: relative;
+}
+
+/* popular products click slide end /// */
+/* popular products end /// */
