@@ -1,5 +1,7 @@
 
-
+*{
+  font-family: 'Gill Sans MT';
+}
 .logo{
   width: 80px; 
   z-index: 10; 
@@ -189,7 +191,6 @@ background-color: #fff;
 }
 
 .popular{
-  font-family: 'Gill Sans MT';
   color: #F987B6;
   animation: color-change 6s infinite;
 }
@@ -216,15 +217,7 @@ background-color: #fff;
   border-radius: 15px;
 }
 
-#wrapper {
-  display: flex;
-  width: 100%;
-  min-width: 280px;
-  max-width: 300px;
-  position: relative;
-  overflow: hidden;
-  justify-content: center !important;
-}
+
 
 #carousel {
   overflow: auto;
@@ -238,8 +231,8 @@ background-color: #fff;
 
 #prev,
 #next {
-  margin-top: -40px;
-  margin-left: 150px;
+  /* margin-top: -40px;
+  margin-left: 150px; */
   display: flex;
   justify-content: center;
   align-content: center;
@@ -250,22 +243,10 @@ background-color: #fff;
   outline: 0;
   cursor: pointer;
   position: absolute;
+  
 }
 
-#prev {
-  left: -33vw !important;
-  transform: translate(50%, -50%);
-  display: none;
-}
 
-#next {
-  left: 45vw !important;
-  transform: translate(-50%, -50%);
-}
-
-#slide-buttons{
-  margin: -40px;
-}
 
 #content {
   display: grid;
@@ -289,28 +270,67 @@ background-color: #fff;
 /* popular products end /// */
   
 /* /// form submit start */
-.form-submit{
-  margin: 0;
-  padding: 30px;
+.inquiry{
+  width: 99%;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: #000; */
-
-}
-
-.form-submit form{
-  /* margin: 30px; */
-  display: flex;
+  position: absolute;
   flex-direction: column;
-  
-  width:100%;
-
+  margin-top: 28px;
+  padding-bottom: 60px;
 }
+
+.bkg{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  z-index: -5;
+  margin-left: -5px;
+  transform: scaleX(-1);
+}
+
+.contact-title{
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+}
+
+.form-submit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-button{
+display: flex;
+padding: 15px 30px;
+margin: -5px 0 30px -20px;
+width: 120px;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+}
+
+#form-button img{
+  z-index: -1;
+  width: 125px;
+  height: 40px;
+  display: flex;
+  position: absolute;
+  
+}
+
 
 input, textarea{
   margin: 10px;
   padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 textarea{
@@ -319,7 +339,46 @@ textarea{
 }
 
 /* form submit end /// */
+@media screen and (max-width: 768px) {
 
+  #wrapper {
+    display: flex;
+    width: 100%;
+    min-width: 280px !important;
+    max-width: 300px !important;
+    position: relative;
+    overflow: hidden;
+    justify-content: center !important;
+  }
+  /* ///slide buttons for popular products */
+  .prev {
+    margin-left: 6% !important;
+    transform: translate(50%, -50%);
+    display: none;
+    
+  }
+  
+  .next{
+    /* left: 80% !important; */
+    margin-left: 230px;
+    transform: translate(-50%, -50%);
+  }
+  
+  #slide-buttons{
+    margin-top: -40px;
+  }
+
+    /* ///slide buttons for popular products end*/
+
+
+    input, textarea{
+      width: 250px;
+    }
+
+    .bkg{
+      height: 100%;
+    }
+}
 
 @media screen and (min-width: 769px) {
 
@@ -494,7 +553,7 @@ background: #0072bc!important;
 
 /* carousel end/// */
 
-}
+
 /* /// popular products start*/
 .pop-header{
   display: flex;
@@ -530,21 +589,16 @@ background: #0072bc!important;
   border-radius: 15px;
 }
 
-/* #wrapper {
+#wrapper {
   display: flex;
   width: 100%;
-  min-width: 290px;
-  max-width: 300px;
+  min-width: 1000px;
+  max-width: 1250px;
   position: relative;
   overflow: hidden;
   justify-content: center;
-} */
+}
 
-/* #carousel {
-  overflow: auto;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-} */
 
 #carousel::-webkit-scrollbar {
   height: 0;
@@ -552,8 +606,7 @@ background: #0072bc!important;
 
 #prev,
 #next {
-  margin-top: -40px;
-  margin-left: 150px;
+
   display: flex;
   justify-content: center;
   align-content: center;
@@ -564,17 +617,26 @@ background: #0072bc!important;
   outline: 0;
   cursor: pointer;
   position: absolute;
+  
 }
 
-#prev {
-  left: -80px;
+#prev{
+  left: 42%;
   transform: translate(50%, -50%);
   display: none;
 }
 
-#next {
-  left: 20px;
+#next{
+  left: 55%;
   transform: translate(-50%, -50%);
+}
+
+#slide-buttons{
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  
 }
 
 #content {
@@ -597,3 +659,19 @@ background: #0072bc!important;
 
 /* popular products click slide end /// */
 /* popular products end /// */
+
+/*/// inquiry */
+
+
+.form-submit{
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input, textarea{
+  width: 350px;
+}
+/* inquiry end /// */
+}

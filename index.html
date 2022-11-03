@@ -80,7 +80,7 @@
     <section class='workers'>
 
         <div id="slide-buttons">
-            <button id="prev">
+            <button id="prev" class="prev">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -92,7 +92,7 @@
               </svg>
             </button>
 
-            <button id="next">
+            <button id="next" class="next">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -103,6 +103,29 @@
                 <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
               </svg>
             </button>
+
+            <!-- <button id="prev desktop">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+              </svg>
+            </button>
+            <button id="next desktop">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+              </svg>
+            </button> -->
         </div>
 
         <div id="wrapper">
@@ -204,28 +227,31 @@
 
       </section>
 </div>
-<div>
-  <h2>
-    What is on your mind? <br/>
-    <h3>Please feel free to contact us.</h3>
-  </h2>
-</div>
 
-<div class="form-submit">
+<div class="inquiry" >
 
-  
-  <form action="" method="POST">
-    <input type="text" name="Name" placeholder="Full Name" required/>   
-    <input type="text" name="Company" placeholder="Company Name"/>
-    <input type="email" name="Email" placeholder="Email" required/>
-    <input type="text" name="City" placeholder="City/Town" />
-    <textarea name="Message" placeholder="Message" required></textarea>
-    <a><button >Send</button></a>
-  </form>
+  <div class="contact-title">
+    <section class="contact-header">
+      <h2>Have anything in mind? </h2>
+      <h3>Please feel free to contact us.</h3>
+    </section>
+  </div>
 
+  <div class="form-submit">
+    <form action="https://formspree.io/f/xjvzpzjv" method="POST">
+      <input type="text" name="Name" placeholder="Full Name*" required/>   
+      <input type="text" name="Company" placeholder="Company Name"/>
+      <input type="email" name="Email" placeholder="Email Address*" required/>
+      <input type="text" name="City" placeholder="City/Town" />
+      <textarea name="Message" placeholder="Message*" required></textarea>
+      <a type="submit" id="form-button" href="#" ><img src="imgs/New folder/button.png"/><p class="button-text">Send</p></a>
+    </form>
+  </div>
+
+    <img class='bkg' src="imgs/New folder/contact-bkg.jpg"/>
 </div>
           
-</div>
+
     <script src="/script.js"> </script>
 </body>
 </html>
