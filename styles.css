@@ -18,11 +18,11 @@
   color:#eee
 }
 
-.desktop .productsimg, .desktop .aboutimg, .desktop .contactimg, .desktop .searchimg{
+.desktop .productsimg, .desktop .aboutimg, .desktop .contactimg, .desktop .searchimged{
   display: none;
 }
 
-.desktop .products, .desktop .about, .desktop .contact, .desktop .search {
+.desktop .products, .desktop .about, .desktop .contact, .desktop .searched {
   display: none;
 }
 
@@ -275,7 +275,7 @@ background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: relative;
   flex-direction: column;
   margin-top: 28px;
   padding-bottom: 60px;
@@ -398,13 +398,13 @@ body {
     width: 50px;
 }
 
-.desktop .aboutimg, .desktop .contactimg, .desktop .searchimg{
+.desktop .aboutimg, .desktop .contactimg, .desktop .searchimged{
   display: flex;
   width: 40px;
   height: 40px;
 }
 
-.desktop .products, .desktop .about, .desktop .contact, .desktop .search {
+.desktop .products, .desktop .about, .desktop .contact, .desktop .searched {
   display: flex;
 }
 
@@ -441,6 +441,7 @@ body {
     font-size: 12px;
     padding: 13px;
     width: 100px;
+    margin-top: 40px;
 }
 
 .about:hover:after{
@@ -457,6 +458,8 @@ body {
     font-size: 12px;
     padding: 13px;
     width: 100px;
+    margin-top: 68px;
+
 }
 
 .contact:hover:after{
@@ -473,7 +476,38 @@ body {
     font-size: 12px;
     padding: 13px;
     width: 100px;
+    margin-top: 68px;
+
 }
+
+.search-input{
+  border: none;
+  border-bottom: 0.1rem solid #999;
+}
+
+.search-button{
+  cursor: pointer;
+}
+
+.search-part{
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;  
+}
+
+.desktop .searched{
+  cursor: pointer;
+}
+
+.search-part.change{
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5 1s;
+}
+
 
 /* nav bar end /// */
 
@@ -674,4 +708,16 @@ input, textarea{
   width: 350px;
 }
 /* inquiry end /// */
+}
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-links > * {
+    margin: 0 20px 0 20px;
+    text-decoration: none;
 }
