@@ -162,7 +162,6 @@ background-color: #fff;
 
   .owl-dots{
   text-align: center;
-  /* margin-top: -350px; */
   }
   .owl-dot{
   height: 15px;
@@ -207,7 +206,6 @@ background-color: #fff;
 
 /* ///popular products click slide start */
 .workers {
-  /* margin-bottom: 200px; */
   display: flex;
   justify-content: center !important  ;
 }
@@ -408,6 +406,10 @@ body {
   display: flex;
 }
 
+.desktop .searchimged{
+  margin-top: 7px;
+}
+
 .nav{
     flex-direction: row;
 }
@@ -487,12 +489,14 @@ body {
 
 .search-button{
   cursor: pointer;
+  height: 50px;
+  margin: 9px 0 0 -10px;
 }
 
 .search-part{
   display: flex;
   flex-direction: row;
-  margin-left: 50px;
+  margin: -10px 0 0 50px;
   opacity: 0;
   visibility: hidden;
   position: absolute;  

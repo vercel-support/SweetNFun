@@ -1,39 +1,30 @@
 //search bar anim
 
-const searchIcon = document.querySelector('.searchimged');
-const searchPart = document.querySelector('.search-part');
-const searchInput = document.querySelector('.search-input');
-// const closeSearch = document.querySelector
+var searched = document.querySelector('.searched');
+var searchIcon = document.querySelector('.searchimged');
+var searchPart = document.querySelector('.search-part');
+var searchInput = document.querySelector('.search-input');
 
-// const onClickOutside = (e) => {
-//   if (!e.target.className.includes('change')) {
-//     show = false;
-//   }
-// };
+  document.addEventListener('click', function handleClick(event){
 
+    var Clicked =searched.contains(event.target);
+    
+    if (Clicked){
+      searchIcon.parentElement.classList.add('change');
+      searchPart.classList.add('change');
+    }
+    
+    if(!Clicked){
+      searchIcon.parentElement.classList.remove('change');
+      searchPart.classList.remove('change');
+    }
 
-  searchIcon.addEventListener('click', function handleClick(event){
-    searchIcon.parentElement.classList.add('change');
-    searchPart.classList.add('change');
-  
     setTimeout(() => {
       searchInput.focus();
     }, 0)
 
   })
-
-
-  // if (searchPart.contains.classList('change')){
-  //   searchIcon.addEventListener('click', ()=>{
-  //     searchPart.classList.remove('change');
-  //     searchIcon.parentElement.classList.remove('change');
-  //   })
-  // }
-
-
-window.removeEventListener('click', handleClick)
-
-
+//search bar anim end //
 
 //hero carousel start
 $(".carousel").owlCarousel({
