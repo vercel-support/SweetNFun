@@ -242,4 +242,101 @@ body {
 
 
 /* nav bar end /// */
+
+/* body start */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#F7CC00, #EBA9DD);
+    margin: 0;
+    padding: 0;
+}
+
+.bodied{
+    padding-top: 50px;
+    
+}
+
+h1, p{
+    /* margin-left: 50%; */
+    display: flex;
+    justify-content: center;
+}
+hr{
+    width: 100px;
+    height: 4px;
+    background-color: red;
+    border: none;
+
+}
+
+.about-us p, .vision p{
+    width: 350px;
+    
+}
+
+.vision {
+    margin-top: 75px;
+    padding-top: 75px;
+    background: linear-gradient( #EBA9DD, #F7CC00);
+    
+}
+
+.vision-p {
+  place-items: center;
+  margin: 40px 0 100px 0;
+}
+
+.vision-p > * {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+}
+
+.top{
+    font-style: italic;
+}
+
+.bottom{
+    margin-top: 100px;
+}
+
+
+.about-img, .vision-p, .about-p, .about-ending{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.vision img{
+    width: 900px;
+}
+
+.about-end-p{
+    display: flex;
+    flex-direction: column;
+    margin: -50px 0 50px 0;
+}
+.about-end-p span{
+    font-weight: bold;
+}
+/* body end /// */
+
+/* footer start*/
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  
+  .footer-links > * {
+      margin: 0 20px 0 20px;
+      text-decoration: none;
+  }
+  /* footer end /// */
 }
