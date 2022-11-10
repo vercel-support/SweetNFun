@@ -296,6 +296,10 @@ align-items: center;
 margin-top: 100px;
 }
 
+.contact-header h4{
+  text-decoration: underline;
+}
+
 .form-submit{
   display: flex;
   justify-content: center;
