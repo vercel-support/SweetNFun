@@ -1,4 +1,6 @@
+
 //search bar toggle
+
 
 var searched = document.querySelector('.searched');
 var searchIcon = document.querySelector('.searchimged');
@@ -90,16 +92,30 @@ window.addEventListener('resize', (e) => (width = carousel.offsetWidth));
 
 // individual product image gallery start
 
+// const activeImage = document.querySelector(".product-image .active");
+// const productImages = document.querySelectorAll(".image-list img");
+
+// function changeImage(e) {
+//   activeImage.src = e.target.src;
+//   console.log(activeImage)
+//   console.log(e.target.src)
+// }
+
+
+
+// productImages.forEach(image => image.addEventListener("click", changeImage));
+
+// });
+
 const activeImage = document.querySelector(".product-image .active");
 const productImages = document.querySelectorAll(".image-list img");
 
+productImages.forEach(img => img.addEventListener('click', changeImage));
+
 function changeImage(e) {
-  activeImage.src = e.target.src;
+  console.log('Changing image', e.target.src);
+  activeImage.setAttribute('src', e.target.src);
 }
-
-
-
-productImages.forEach(image => image.addEventListener("click", changeImage));
 
 
 // individual product image gallery end //
