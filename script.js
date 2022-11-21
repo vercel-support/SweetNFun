@@ -1,4 +1,4 @@
-//search bar anim
+//search bar toggle
 
 var searched = document.querySelector('.searched');
 var searchIcon = document.querySelector('.searchimged');
@@ -24,7 +24,18 @@ var searchInput = document.querySelector('.search-input');
     }, 0)
 
   })
-//search bar anim end //
+//search bar toggle end //
+
+//nav 'contact' button scroll
+
+var contact = document.querySelector('.inquiry');
+var button = document.querySelector('.directory .contact');
+
+button.addEventListener('click', function () {
+  contact.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+
+//nav 'contact' button scroll end///
 
 //hero carousel start
 $(".carousel").owlCarousel({
@@ -77,3 +88,18 @@ window.addEventListener('resize', (e) => (width = carousel.offsetWidth));
 
 //hero carousel end //
 
+// individual product image gallery start
+
+const activeImage = document.querySelector(".product-image .active");
+const productImages = document.querySelectorAll(".image-list img");
+
+function changeImage(e) {
+  activeImage.src = e.target.src;
+}
+
+
+
+productImages.forEach(image => image.addEventListener("click", changeImage));
+
+
+// individual product image gallery end //
