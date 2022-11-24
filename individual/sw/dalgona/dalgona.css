@@ -101,7 +101,7 @@
     }
     
     .desktop .searchimged{
-      margin-top: 7px;
+      margin-top: 0px;
     }
     
     .nav{
@@ -195,14 +195,18 @@
     }
     
     .search-input{
+      margin-top: 5px;
+      width: 300px;
+      height: 45px;
       border: none;
       border-bottom: 0.1rem solid #999;
     }
     
     .search-button{
+      margin-top: 4px;
       cursor: pointer;
       height: 50px;
-      margin: 9px 0 0 -10px;
+      /* margin: 9px 0 0 -10px; */
     }
     
     .search-part{
@@ -223,12 +227,81 @@
       visibility: visible;
       transition: all 0.5 1s;
     }
+
+    .banner{
+      margin: 0 -25px 0 -7px;
+
+    }
+
+    .bann{
+      width: 100%;
+      /* margin: 0 -15px 0 -8px; */
+      overflow: hidden;
+
+    }
+
+    /* nav bar end /// */
     
     .products-header{
       padding-top: 50px;
-
     }
-    /* nav bar end /// */
+
+    .header-bread{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .header-bread a{
+      color: #000;
+    }
+    
+    .header-bread .home{
+      margin-left: -500px;
+      margin-top: 15px;
+      cursor:pointer;
+      z-index: 2;
+      text-decoration: none;
+    
+    }
+    
+    .header-bread .all-prod{
+      margin-top: 15px;
+      margin-left: 30px;
+      cursor:pointer;
+      z-index: 2;
+      text-decoration: none;
+    }
+
+    .header-bread .sw{
+      margin-top: 15px;
+      margin-left: 30px;
+      cursor:pointer;
+      z-index: 2;
+      text-decoration: none;
+    }
+    
+    .header-bread h1{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      position: absolute;
+      cursor:default;
+    }
+
+    h1{
+      display: flex;
+      justify-content: center;
+    }
+  
+    hr{
+      width: 100px;
+      height: 4px;
+      background-color: red;
+      border: none;
+      margin-bottom: 50px;
+    }
+    
 
     .product-image {
         display: none;
@@ -241,11 +314,18 @@
     .product{
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
     }
 
     .right{
-        width: 500px;
+        width: 450px;
         padding: 30px;
+    }
+
+    .description{
+      margin-top: -180px;
+
     }
 
     .product-image {
@@ -255,7 +335,7 @@
 
     .product-image img {
         height: 520px;
-        width: 100%;
+        width: 620px;
     }
 
     .product-image img .active {
@@ -294,7 +374,25 @@
         justify-content: flex-end;
     }
 
-       
-
+    .footer{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background: linear-gradient(#FEE687, #F4A7DD);
+      margin: 0 -7px -7px -7px;
+      padding: 0;
+      margin-top: 50px;
       
+    }
+    .footer-links{
+      margin-top: 20px;
+    }
+
+    .footer-links > * {
+        margin: 0 20px 0 20px;
+        text-decoration: none;
+    }
+
+  }
     
