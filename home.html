@@ -39,7 +39,7 @@
         <div class="directory desktop">
             <a href="products/products.html" class="products"><img class='productsimg' src='imgs/products.png'/></a>
             <a href="about/about.html" class="about"><img class='aboutimg' src='imgs/about.png'/></a>
-            <a class="contact"><img class='contactimg' src='imgs/contact.png'/></a>
+            <a href="#form-submit" class="contact"><img class='contactimg' src='imgs/contact.png'/></a>
             <!-- <h4>Blog</h4> -->
             <a class="searched"> 
               <img class="searchimged" src='imgs/search.png'/>
@@ -244,11 +244,12 @@
     </section>
   </div>
 
-  <div class="form-submit">
+  <div class="form-submit" id="form-submit">
     <form action="https://formspree.io/f/xjvzpzjv" method="POST">
       <input type="text" name="Name" placeholder="Full Name*" required/>   
       <input type="text" name="Company" placeholder="Company Name"/>
       <input type="email" name="Email" placeholder="Email Address*" required/>
+      <input type="tel" name="Phone Number" placeholder="Phone Number*" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
       <input type="text" name="City" placeholder="City/Town" />
       <textarea name="Message" placeholder="Message*" required></textarea>
       <a type="submit" id="form-button" href="#" ><img src="imgs/New folder/button.png"/><p class="button-text">Send</p></a>
@@ -261,9 +262,9 @@
 <div class="footer">
 
   <div class="footer-links">
-    <a href="" class="products-footer">Products</a>
-    <a href="" class="about-footer">About Us</a>
-    <a href="" class="contact-footer">Contact Us</a>
+    <a href="/products/products.html" class="products-footer">Products</a>
+    <a href="/about/about.html" class="about-footer">About Us</a>
+    <a href="#form-submit" class="contact-footer">Contact Us</a>
   </div>
 
   <div class="copyright">

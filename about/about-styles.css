@@ -1,6 +1,9 @@
 *{
     font-family: 'Gill Sans MT';
+    
   }
+  html{scroll-behavior:smooth}
+  
   .logo{
     width: 80px; 
     z-index: 10; 
@@ -336,11 +339,19 @@ hr{
 
 .about-end-p{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    text-align: center; 
     margin: -50px 0 50px 0;
 }
-.about-end-p span{
+.about-ending span{
     font-weight: bold;
+}
+
+.about-ending{
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  text-align: center; 
 }
 /* body end /// */
 
