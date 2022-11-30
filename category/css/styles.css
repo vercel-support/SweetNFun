@@ -200,6 +200,10 @@ body {
   margin-right: 90px;
 }
 
+.space90{
+  margin-right: 90px;
+}
+
 .header-bread h1{
   display: flex;
   justify-content: center;

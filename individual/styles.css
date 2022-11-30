@@ -311,12 +311,16 @@
       margin-right: 45px;
     }
 
-    .header-bread .lgblueberry, .lgrainbow{
+    .header-bread .lgblueberry, .lgrainbow, .xlg, .jelly45{
       margin-right: 45px;
     }
 
-    .header-bread .large{
+    .header-bread .large, .largest, .jelly90{
       margin-right: 90px;
+    }
+
+    .header-bread .xlarge{
+      margin-right: 135px;
     }
 
     h1{
@@ -374,11 +378,12 @@
         overflow: hidden;
         padding: 0;
         padding: 15px;
+        justify-content: center;
     }
 
     .image-list img {
         height: 10rem;
-        width: 100%;
+        /* width: 100%; */
         transition: opacity 0.3s ease;
         cursor: pointer;
     }
@@ -389,17 +394,29 @@
 
     .image-list li {
         margin: 0 0.75rem 0 0;
-        flex-basis: 100%;
+        /* flex-basis: 100%; */
         list-style: none;
     }
 
     .image-list li:nth-child(3) {
         margin: 0;
         box-shadow: none;
+        display: none;
+    }
+
+    #dalgona{
+      display: flex;
+      box-shadow: 0px 0px 5px #999;
+
     }
 
     #roipops{
+      display: flex;
       box-shadow: 0px 0px 5px #999;
+    }
+
+    #fruitsticks{
+      margin-right: -90px;
     }
 
     .image-item{
