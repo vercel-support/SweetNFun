@@ -46,3 +46,4 @@ var searchInput = document.querySelector('.search-input');
 
   })
 //search bar toggle end //
+

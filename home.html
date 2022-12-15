@@ -24,8 +24,10 @@
         <div id="menu">
             <div class="directory mobile">
                 <a href="products/products.html" class="products"><img class='productsimg' src='imgs/products2.png'/> All Products</a>
+                <a href="/brochure/brochures.html" class="brochures"><img class='brochuresimg' src='/imgs/brochures.png'/></a>
                 <a href="about/about.html" class="about" ><img class='aboutimg' src='imgs/about.png'> About Us</a>
                 <a class="contact"><img class='contactimg' src='imgs/contact.png'/>Contact Us</a>
+                
                 <!-- <h4>Blog</h4> -->
                 <a class="search"><img class='searchimg' src='imgs/search.png'/></a>
             </div>
@@ -38,13 +40,13 @@
         </div>
         <div class="directory desktop">
             <a href="products/products.html" class="products"><img class='productsimg' src='imgs/products.png'/></a>
+            <a href="/brochure/brochures.html" class="brochures"><img class='brochuresimg' src='/imgs/brochures.png'/></a>
             <a href="about/about.html" class="about"><img class='aboutimg' src='imgs/about.png'/></a>
             <a href="#form-submit" class="contact"><img class='contactimg' src='imgs/contact.png'/></a>
-            <!-- <h4>Blog</h4> -->
             <a class="searched"> 
               <img class="searchimged" src='imgs/search.png'/>
-              <div class="search-part">
-                <input class="search-input" type="text" placeholder="Search"/>
+              <div id="form" class="search-part" >
+                <input id="query" name="q" class="search-input" type="search" placeholder="Search" aria-label="Search through site content"/>
                 <button class="search-button">Go</button>
               </div>
             </a>
@@ -56,26 +58,42 @@
   <div class="carousel owl-carousel">
     
     <div class="card card-1">
-    <img src="https://bit.ly/34xczKy">
+      <div class="intro-block">
+        <!-- <p>All you need is a bit of fun and something sweet</p> -->
+        <p class="intro-p">Love is sharing your Sweet N Fun!</p>
+        <a href="/products/products.html"><img class="button1" src="imgs/New folder/button.png"/><p class="button-text1">Get Started</p></a>
+
+      </div>
+      <img class="first" src="/imgs/banners/snf.png">
+      <img class="shadow">
+      
+    <img src="/imgs/banners/00- bannercover.jpg">
     </div>
     <div class="card card-2">
-        <img src="https://bit.ly/3lkp5DW">
+        <img src="/imgs/banners/001- dalgona-banner.jpg">
     </div>
     <div class="card card-3">
-        <img src="https://bit.ly/3iMHuI1">
+        <img src="/imgs/banners/002-krz.jpg">
     </div>
     <div class="card card-4">
-        <img src="https://bit.ly/34xczKy">
+        <img src="/imgs/banners/01- theSWhirlsBanner.jpg">
     </div>
     <div class="card card-5">
-        <img src="https://bit.ly/3lkp5DW">
+        <img src="/imgs/banners/03- bannerROI.jpg">
     </div>
     <div class="card card-6">
-        <img src="https://bit.ly/3iMHuI1">
+        <img src="/imgs/banners/06- GourmetJellyBanner.png">
     </div>
     <div class="card card-7">
-        <img src="https://bit.ly/3iMHuI1">
+        <img src="/imgs/banners/09- JellyLargeBanner.jpg">
     </div>
+    <div class="card card-8">
+      <img src="/imgs/banners/25- Jawbreaker Banner.jpg">
+  </div>
+  <div class="card card-9">
+    <img src="/imgs/banners/50- OFFICE.jpg">
+</div>
+
   </div>
 </div> 
 
@@ -262,7 +280,9 @@
 <div class="footer">
 
   <div class="footer-links">
+    <a href="#" class="brochures-footer">Home</a>
     <a href="/products/products.html" class="products-footer">Products</a>
+    <a href="/brochure/brochures.html" class="brochures-footer">Brochures</a>
     <a href="/about/about.html" class="about-footer">About Us</a>
     <a href="#form-submit" class="contact-footer">Contact Us</a>
   </div>
