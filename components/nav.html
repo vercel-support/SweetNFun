@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sweet N Fun Products Ltd. Website</title>
+    <title>Sweet N Fun Products Ltd.</title>
     <link rel="stylesheet" href="nav.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'/>
-  <script src="../script.js" type="text/javascript" defer></script>
+  <script src="../fetchnav.js"  defer></script>
   
 </head>
 <body>
@@ -24,9 +24,9 @@
 
         <div id="menu">
             <div class="directory mobile">
-                <a href="products/products.html" class="products"><img class='productsimg' src='imgs/products2.png'/> All Products</a>
+                <a href="/products/products.html" class="products"><img class='productsimg' src='imgs/products2.png'/> All Products</a>
                 <a href="/brochure/brochures.html" class="brochures"><img class='brochuresimg' src='/imgs/brochures.png'/></a>
-                <a href="about/about.html" class="about" ><img class='aboutimg' src='imgs/about.png'> About Us</a>
+                <a href="/about/about.html" class="about" ><img class='aboutimg' src='imgs/about.png'> About Us</a>
                 <a class="contact"><img class='contactimg' src='imgs/contact.png'/>Contact Us</a>
                 
                 <!-- <h4>Blog</h4> -->
@@ -38,21 +38,21 @@
         </div>
         
         <div >
-            <a class="logo-container">
+            <a class="logo-container" href="/home.html">
                 <img class='logo' src='../imgs/logo.png'/>
             </a>
         </div>
         <div class="directory desktop">
-            <a href="products/products.html" class="products"><img class='productsimg' src='../imgs/products.png'/></a>
-            <a href="/brochure/brochures.html" class="brochures"><img class='brochuresimg' src='../imgs/brochures.png'/></a>
-            <a href="about/about.html" class="about"><img class='aboutimg' src='../imgs/about.png'/></a>
-            <a href="#form-submit" class="contact"><img class='contactimg' src='../imgs/contact.png'/></a>
+            <a href="../products/products.html" class="products"><img class='productsimg' src='../imgs/products.png'/></a>
+            <a href="../brochure/brochures.html" class="brochures"><img class='brochuresimg' src='../imgs/brochures.png'/></a>
+            <a href="../about/about.html" class="about"><img class='aboutimg' src='../imgs/about.png'/></a>
+            <a href="../home.html#form-submit" class="contact"><img class='contactimg' src='../imgs/contact.png'/></a>
             <a class="searched"> 
               <img class="searchimged" src='../imgs/search.png'/>
               
               <div id="form" class="search-part" >
 
-                <input type="text" value="" class="search-input" id="mySearch" name="q" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+                <input type="text" class="search-input" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in the name of a product">
 
                 <ul id="myMenu" >
                   <li><a href="/category/jawbreakersBulk.html">Jawbreakers Bulk</a></li>
@@ -140,12 +140,11 @@
                   <li><a href="/individual/XL/rainbow.html">Sweet Whirls extra-large Rainbow</a></li>
   
                 </ul>
-                <!-- <input id="query" name="q" class="search-input" type="search" placeholder="Search" aria-label="Search through site content"/> -->
-                <!-- <button class="search-button">Go</button> -->
+                
               </div>
               
             </a>
-            <!-- <div class="gcse-search"></div> -->
+            
         </div>
     </div>
   

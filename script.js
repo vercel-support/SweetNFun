@@ -1,12 +1,12 @@
 
 //nav bar insert to DOM
 
-fetch("components/nav.html")
+fetch("../components/nav.html")
   .then(response => response.text())
   .then(html => {
     document.getElementById('nav').innerHTML = html;
   });
-
+//nav bar insert to DOM end //
 
 
 
@@ -43,7 +43,6 @@ var searchInput = document.querySelector('.search-input');
 //search bar function 
 
 function myFunction() {
-  // Declare variables
   var input, filter, ul, li, a, i;
   input = document.getElementById("mySearch");
   filter = input.value.toUpperCase();
@@ -51,12 +50,20 @@ function myFunction() {
   li = ul.getElementsByTagName("li");
 
 
-  if(input.value.length == 0 && input.value == ''){
+  
+
+  if(input.value.length == 0 ){
     ul.style.display = "none";
     return;
-}else{
-    ul.style.display = "block";
-}
+  }else{
+    input.addEventListener('input', function() {
+      ul.style.display = 'block';
+    });
+  }
+
+  
+
+
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < li.length; i++) {
     a = li[i].getElementsByTagName("a")[0];
@@ -137,20 +144,6 @@ window.addEventListener('resize', (e) => (width = carousel.offsetWidth));
 
 // individual product image gallery start
 
-// const activeImage = document.querySelector(".product-image .active");
-// const productImages = document.querySelectorAll(".image-list img");
-
-// function changeImage(e) {
-//   activeImage.src = e.target.src;
-//   console.log(activeImage)
-//   console.log(e.target.src)
-// }
-
-
-
-// productImages.forEach(image => image.addEventListener("click", changeImage));
-
-// });
 
 const activeImage = document.querySelector(".product-image .active");
 const productImages = document.querySelectorAll(".image-list img");
