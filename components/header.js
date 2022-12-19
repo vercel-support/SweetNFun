@@ -1,80 +1,7 @@
+const headerTemplate = document.createElement('template');
 
-*{
-    font-family: 'Gill Sans MT';
-  }
-  .logo{
-    width: 80px; 
-    z-index: 10; 
-  }
-  .logo-container{
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* /// hamburger menu start */
-  header {
-    border-bottom: 1px solid #eee;
-    height: 4rem;
-  }
-  #menu {
-    background: #333;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    transition-timing-function: cubic-bezier(10,2,3,1);
-    transform: translateX(50rem);
-    top: 0;
-    z-index: 5;
-    transition: 0.5s;
-  }
-  #menuIcon {
-    display: none;
-  }
-  
-  #menuIcon:checked ~ #menu {
-    transform: translateX(0rem);
-  }
-  
-  #burger {
-    margin: 20px 20px;
-    position: absolute;
-    cursor: pointer;
-    width: 2rem;
-    height: 2rem;
-    right: 1rem;
-    top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  
-  #burger > div {
-    height: 2px;
-    background-color: #000;
-    transition: 0.5s;
-    z-index: 999;
-  }
-  
-  #menuIcon:checked ~ #burger > div {
-  background-color: #fff;
-  }
-  
-  #menuIcon:checked ~ #burger > div:nth-child(1) {
-    transform: translateY(15px) rotate(45deg);
-  }
-  #menuIcon:checked ~ #burger > div:nth-child(2) {
-    opacity: 0;
-  }
-  #menuIcon:checked ~ #burger > div:nth-child(3) {
-    transform: translateY(-15px) rotate(-45deg);
-  }
-  /* hamburger menu end /// */
-
-@media screen and (min-width: 769px) {
-
-    /* /// nav bar start */
+headerTemplate.innerHTML = `
+    <style>
     html,
     body {
       font-family: "Roboto", sans-serif;
@@ -123,7 +50,7 @@
         display: flex;
         justify-content: center;
     }
-
+    
     .logo-container:hover:after{
       display: -webkit-flex;
       display: flex;
@@ -196,6 +123,8 @@
     }
     
     .search-input{
+      width: 350px;
+      padding: 16px;
       border: none;
       border-bottom: 0.1rem solid #999;
     }
@@ -203,13 +132,14 @@
     .search-button{
       cursor: pointer;
       height: 50px;
-      margin: 9px 0 0 -10px;
+      margin: 0 0 0 0;
     }
     
     .search-part{
       display: flex;
       flex-direction: row;
-      margin: -10px 0 0 50px;
+      margin: 0 0 0 60px;
+      height: 50px;
       opacity: 0;
       visibility: hidden;
       position: absolute;  
@@ -225,72 +155,61 @@
       transition: all 0.5 1s;
     }
     
-    .products-header{
-      padding-top: 50px;
-
-    }
+    
     /* nav bar end /// */
-    h1, p{
-      /* margin-left: 50%; */
-      display: flex;
-      justify-content: center;
+    <style/>
+    <header>
+    <div class="nav">
+        <input type="checkbox" id="menuIcon">
+        <label id="burger" for="menuIcon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+
+        <div id="menu">
+            <div class="directory mobile">
+                <a class="products"><img class='productsimg' src='/imgs/products2.png'/> All Products</a>
+                <a class="about" href="#"><img class='aboutimg' src='/imgs/about.png'/> About Us</a>
+                <a class="contact"><img class='contactimg' src='/imgs/contact.png'/>Contact Us</a>
+                <!-- <h4>Blog</h4> -->
+                <a class="search"><img class='searchimg' src='/imgs/search.png'/></a>
+            </div>
+        </div>
+        
+        <div >
+            <a class="logo-container" href="/index.html">
+                <img class='logo' src='/imgs/logo.png'/>
+            </a>
+        </div>
+        <div class="directory desktop">
+            <a href="#" class="products"><img class='productsimg' src='/imgs/products.png'/></a>
+            <a href="about/about.html" class="about"><img class='aboutimg' src='/imgs/about.png'/></a>
+            <a class="contact"><img class='contactimg' src='/imgs/contact.png'/></a>
+            <!-- <h4>Blog</h4> -->
+            <a class="searched"> 
+              <img class="searchimged" src='/imgs/search.png'/>
+              <div class="search-part">
+                <input class="search-input" type="text" placeholder="Search"/>
+                <button class="search-button">Go</button>
+              </div>
+            </a>
+        </div>
+    </div>
+    </header>
+    `;
+
+
+class Header extends HTMLElement {
+    constructor() {
+      super();
     }
+  
+    connectedCallback() {
+        const shadowRoot = this.attachShadow({ mode: 'open' });
 
-    hr{
-      width: 100px;
-      height: 4px;
-      background-color: red;
-      border: none;
+        shadowRoot.appendChild(headerTemplate.content);
     }
-
-    .prod-container{
-      display: grid;
-      gap: 15px 15px;
-      padding: 10px;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .prod-container > a{
-      background-color: #fff;
-      padding: 10px 0;
-      width: 300px;
-      height: 300px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      flex-direction: column;
-      border-style: solid;
-      border-radius: 5px;
-    }
-
-    .prod-container h3{
-      width: 150px;
-      text-align: center;
-    }
-
-    .prod-container img{
-      width: 250px;
-    }
-
-
-    .sweet-whirls{
-      
-      grid-area: 1/1/span 1/span 1;
-    }
-
-    .krazi-twist{
-      grid-area: 1/2/span 1/span 1;
-    }
-
-    .roi-pop{
-      grid-area: 1/3/span 1/span 1;
-    }
-
-    /* .fancy-sticks{
-      grid-area: 1/4/span 1/span 1;
-    } */
-
-}
+  }
+  
+  customElements.define('header-component', Header);
