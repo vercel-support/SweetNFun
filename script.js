@@ -44,6 +44,7 @@ function submitted(event) {
 
 f.addEventListener('submit', submitted);
 
+
 //search bar function end //
 
 //nav 'contact' button scroll
