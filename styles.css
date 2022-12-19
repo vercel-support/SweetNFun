@@ -617,13 +617,7 @@ border-radius: 10px;
   margin-top: 250px;
 }
 
-.carousel .card-1 .intro-block{
-  position: relative;
-  /* background-color: transparent; */
-  /* margin-top: 300px; */
-  z-index: 1;
-  margin-left: 50px;
-}
+
 
 .carousel .card-1 .button1{
   display: flex;
@@ -636,32 +630,11 @@ border-radius: 10px;
   margin-top: 350px; 
 }
 
-.carousel .card-1 .button-text1{
-  display: flex;
-  position: absolute;
-  font-size: large;
-  text-decoration: none;
-  left: 125px;
-  margin-top: 250px;
-  z-index: 2;
-  
-}
 
-.carousel .card-1 .first{
-  width: 600px;
-  display: flex;
-  position: absolute;
-  background-color: transparent;
-  z-index: 1;
-  margin-left: 420px;
-}
 
-.carousel .card-1 .shadow{
-  display: flex;
-  position: absolute;
-  opacity: 0.3;
-  background-color:#000;
-}
+
+
+
 
 .carousel .card-1 .intro-p {
   display: flex;
@@ -677,22 +650,12 @@ border-radius: 10px;
 }
 
 .carousel .card-1 .intro-block{
-  position: relative;
+  position: absolute;
   /* background-color: transparent; */
-  /* margin-top: 300px; */
+  margin-top: 0px;
   z-index: 1;
   margin-left: 50px;
-}
 
-.carousel .card-1 .button1{
-  display: flex;
-  position: absolute;
-  background-color: transparent;
-  width: 200px;
-  height: 50px;
-  z-index: 1;
-  left: 75px;
-  margin-top: 350px; 
 }
 
 .carousel .card-1 .button-text1{
@@ -703,7 +666,7 @@ border-radius: 10px;
   left: 125px;
   margin-top: 250px;
   z-index: 2;
-  
+  width: 200px;
 }
 
 .carousel .card-1 .first{
