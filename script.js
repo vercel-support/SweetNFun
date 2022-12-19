@@ -1,3 +1,16 @@
+<<<<<<< Updated upstream
+=======
+//nav bar insert to DOM
+
+fetch("components/nav.html")
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('nav').innerHTML = html;
+  });
+
+
+
+>>>>>>> Stashed changes
 //search bar toggle
 
 var searched = document.querySelector('.searched');
@@ -26,6 +39,40 @@ var searchInput = document.querySelector('.search-input');
   })
 //search bar toggle end //
 
+<<<<<<< Updated upstream
+=======
+
+//search bar function 
+
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+
+
+  if(input.value.length == 0 && input.value == ''){
+    ul.style.display = "none";
+    return;
+}else{
+    ul.style.display = "block";
+}
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "block";
+    } else {
+        li[i].style.display = "none";
+    }
+}
+}
+//search bar function end //
+
+
+>>>>>>> Stashed changes
 //nav 'contact' button scroll
 
 var contact = document.querySelector('.inquiry');
@@ -36,6 +83,7 @@ button.addEventListener('click', function () {
 });
 
 //nav 'contact' button scroll end///
+
 
 //hero carousel start
 $(".carousel").owlCarousel({

@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet N Fun Products Ltd. Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'/>
+  <script src="../script.js" type="text/javascript" defer></script>
   
 </head>
 <body>
@@ -23,13 +24,11 @@
 
         <div id="menu">
             <div class="directory mobile">
-
-
                 <a href="products/products.html" class="products"><img class='productsimg' src='imgs/products2.png'/> All Products</a>
+                <a href="/brochure/brochures.html" class="brochures"><img class='brochuresimg' src='/imgs/brochures.png'/></a>
                 <a href="about/about.html" class="about" ><img class='aboutimg' src='imgs/about.png'> About Us</a>
-
-                <a href="#inquiry" class="contact"><img class='contactimg' src='imgs/contact.png'/>Contact Us</a>
-
+                <a class="contact"><img class='contactimg' src='imgs/contact.png'/>Contact Us</a>
+                
                 <!-- <h4>Blog</h4> -->
                 <a class="search"><img class='searchimg' src='imgs/search.png'/></a>
                 
@@ -39,30 +38,21 @@
         </div>
         
         <div >
-            <a class="logo-container" href="#">
-                <img class='logo' src='imgs/logo.png'/>
+            <a class="logo-container">
+                <img class='logo' src='../imgs/logo.png'/>
             </a>
         </div>
         <div class="directory desktop">
-
-
-            <a href="products/products.html" class="products"><img class='productsimg' src='imgs/products.png'/></a>
-            <a href="about/about.html" class="about"><img class='aboutimg' src='imgs/about.png'/></a>
-            <a href="#inquiry" class="contact"><img class='contactimg' src='imgs/contact.png'/></a>
-
-
-            <!-- <h4>Blog</h4> -->
+            <a href="products/products.html" class="products"><img class='productsimg' src='../imgs/products.png'/></a>
+            <a href="/brochure/brochures.html" class="brochures"><img class='brochuresimg' src='../imgs/brochures.png'/></a>
+            <a href="about/about.html" class="about"><img class='aboutimg' src='../imgs/about.png'/></a>
+            <a href="#form-submit" class="contact"><img class='contactimg' src='../imgs/contact.png'/></a>
             <a class="searched"> 
-              <img class="searchimged" src='imgs/search.png'/>
-<<<<<<< Updated upstream:index.html
-              <div class="search-part">
-                <input class="search-input" type="text" placeholder="Search"/>
-                <button class="search-button">Go</button>
-=======
+              <img class="searchimged" src='../imgs/search.png'/>
               
               <div id="form" class="search-part" >
 
-                <input type="text" class="search-input" id="mySearch name="q" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+                <input type="text" value="" class="search-input" id="mySearch" name="q" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
 
                 <ul id="myMenu" >
                   <li><a href="/category/jawbreakersBulk.html">Jawbreakers Bulk</a></li>
@@ -152,235 +142,12 @@
                 </ul>
                 <!-- <input id="query" name="q" class="search-input" type="search" placeholder="Search" aria-label="Search through site content"/> -->
                 <!-- <button class="search-button">Go</button> -->
->>>>>>> Stashed changes:home.html
               </div>
               
             </a>
             <!-- <div class="gcse-search"></div> -->
         </div>
     </div>
-
-    
-<div class="hero wrapper">
-  <div class="carousel owl-carousel">
-    
-    <div class="card card-1">
-    <img src="https://bit.ly/34xczKy">
-    </div>
-    <div class="card card-2">
-        <img src="https://bit.ly/3lkp5DW">
-    </div>
-    <div class="card card-3">
-        <img src="https://bit.ly/3iMHuI1">
-    </div>
-    <div class="card card-4">
-        <img src="https://bit.ly/34xczKy">
-    </div>
-    <div class="card card-5">
-        <img src="https://bit.ly/3lkp5DW">
-    </div>
-    <div class="card card-6">
-        <img src="https://bit.ly/3iMHuI1">
-    </div>
-    <div class="card card-7">
-        <img src="https://bit.ly/3iMHuI1">
-    </div>
-  </div>
-</div> 
-
-<div>
-    <div class="pop-header">
-        <h1 class="popular"> <span>POP</span>ULAR <br/> PRODUCTS</h1>
-    </div>
-
-    <section class='workers'>
-
-        <div id="slide-buttons">
-            <button id="prev" class="prev">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path fill="none" d="M0 0h24v24H0V0z" />
-                <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
-              </svg>
-            </button>
-
-            <button id="next" class="next">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path fill="none" d="M0 0h24v24H0V0z" />
-                <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
-              </svg>
-            </button>
-
-            <!-- <button id="prev desktop">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path fill="none" d="M0 0h24v24H0V0z" />
-                <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
-              </svg>
-            </button>
-            <button id="next desktop">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-              >
-                <path fill="none" d="M0 0h24v24H0V0z" />
-                <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
-              </svg>
-            </button> -->
-        </div>
-
-        <div id="wrapper">
-            <div id="carousel">
-              <div id="content">
-                <div id="first" class='card'>
-                  <img
-                    class="item"
-                    src="imgs/New folder/rainbow.jpg"
-                  />
-                  <a href="#" target="_blank">
-                    <div class="hovered">
-                      
-                      <!-- <span id='works-icon1' class="material-icons">open_in_new</span> -->
-
-                    </div>
-                  </a>
-                </div>
-
-                <div id="second" class='card'>
-                  <img
-                    src="imgs/New folder/rainbow.jpg"
-                    class="item"
-                  />
-                  <a href="#" target="_blank">
-                    <div class="hovered" >
-                    
-                      <!-- <span id='works-icon2' class="material-icons">open_in_new</span> -->
-
-                    </div>
-                  </a>
-                </div>
-
-                <div id="third" class='card'>
-                  <img
-                    src="imgs/New folder/rainbow.jpg"
-                    class="item"
-                  />
-                  <a href="#" target="_blank">
-                    <div class="hovered">
-
-                      <!-- <span id='works-icon3' class="material-icons">open_in_new</span> -->
-
-                    </div>
-                  </a>
-                </div>
-
-                <div id="fourth" class='card'>
-                  <img
-                    src="imgs/New folder/rainbow.jpg"
-                    class="item"
-                  />
-                  <a href="#" target="_blank">
-                    <div class="hovered">
-                      
-                      <!-- <span id='works-icon4' class="material-icons">open_in_new</span> -->
-
-                    </div>
-                  </a>
-                </div>
-                
-                <div id="fifth" class='card'>
-                  <img
-                    src="imgs/New folder/rainbow.jpg"
-                    class="item"
-                  />
-                  <a href="#" target="_blank">
-                    <div class="hovered">
-                      
-                      <!-- <span id='works-icon5' class="material-icons">open_in_new</span> -->
-
-                    </div>
-                  </a>
-                </div>
-
-                <div id="sixth" class='card'>
-                  <img
-                    src="imgs/New folder/rainbow.jpg"
-                    class="item"
-                  />
-                  <a href="#" target="_blank">
-                    <div class="hovered">
-                      
-                      <!-- <span id='works-icon6' class="material-icons">open_in_new</span> -->
-
-                  </div>
-                  </a>
-                </div>
-                
-                
-                
-                
-              </div>
-            </div>
-            
-        </div>
-        
-        
-
-      </section>
-</div>
-
-<div class="inquiry" name="inquiry" >
-
-  <div class="contact-title">
-    <section class="contact-header">
-      <h2>Have anything in mind? </h2>
-      <h3>Feel free to contact us.</h3>
-      <h4>Please make an appointment before visiting.</h4>
-    </section>
-  </div>
-
-  <div class="form-submit">
-    <form action="https://formspree.io/f/xjvzpzjv" method="POST">
-      <input type="text" name="Name" placeholder="Full Name*" required/>   
-      <input type="text" name="Company" placeholder="Company Name"/>
-      <input type="email" name="Email" placeholder="Email Address*" required/>
-      <input type="text" name="City" placeholder="City/Town" />
-      <textarea name="Message" placeholder="Message*" required></textarea>
-      <a type="submit" id="form-button" href="#" ><img src="imgs/New folder/button.png"/><p class="button-text">Send</p></a>
-    </form>
-  </div>
-
-    <img class='bkg' src="imgs/New folder/contact-bkg.jpg"/>
-</div>
-       
-<div class="footer">
-
-  <div class="footer-links">
-    <a href="" class="products-footer">Products</a>
-    <a href="about/about.html" class="about-footer">About Us</a>
-    <a href="" class="contact-footer">Contact Us</a>
-  </div>
-
-  <div class="copyright">
-    <p>Sweet N Fun Products Ltd. © 2022 All Rights Reserved.</p>
-  </div>
-</div>
-
-    <script src="/script.js"> </script>
+  
 </body>
 </html>
