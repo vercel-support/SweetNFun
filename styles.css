@@ -298,15 +298,13 @@ width: 120px;
 justify-content: center;
 align-items: center;
 text-decoration: none;
-}
+background-image: url("imgs/New folder/button.png");
+background-size: cover;
+background-position: center;
+width: 140px;
+height: 40px;
+border: none;
 
-#form-button img{
-  z-index: -1;
-  width: 125px;
-  height: 40px;
-  display: flex;
-  position: absolute;
-  
 }
 
 
@@ -410,7 +408,7 @@ body {
 }
 
 .nav a{
-    margin: 20px 20px;
+  margin: 5px 5px;
 }
 
 .nav .logo-container{
@@ -422,6 +420,11 @@ body {
 .nav .directory{
     display: flex;
     justify-content: center;
+}
+
+.nav .directory a{
+  margin: 20px 20px;
+
 }
 
 .logo-container:hover:after{
@@ -555,7 +558,7 @@ background: #eee;
 
 /* Style the navigation links */
 #myMenu li a {
-  padding: 12px;
+  padding: 5px;
   text-decoration: none;
   color: black;
   display: block
@@ -837,6 +840,7 @@ input, textarea{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  bottom: 0;
 }
 
 .footer-links a:hover{

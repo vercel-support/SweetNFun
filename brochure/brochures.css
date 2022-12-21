@@ -116,8 +116,8 @@
     }
     
     .nav a{
-        margin: 20px 20px;
-    }
+      margin: 5px 5px;
+  }
     
     .nav .logo-container{
         display: flex;
@@ -128,6 +128,11 @@
     .nav .directory{
         display: flex;
         justify-content: center;
+    }
+
+    .nav .directory a{
+      margin: 20px 20px;
+    
     }
 
     .desktop .brochuresimg{
@@ -225,27 +230,58 @@
     }
     
     .search-input{
-      margin-top: 5px;
       width: 300px;
-      height: 45px;
       border: none;
       border-bottom: 0.1rem solid #999;
+      margin: 10px;
+      padding: 1rem;
     }
     
     .search-button{
-      margin-top: 4px;
       cursor: pointer;
       height: 50px;
-      /* margin: 9px 0 0 -10px; */
+      margin: 9px 0 0 -10px;
     }
     
     .search-part{
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       margin: -10px 0 0 50px;
       opacity: 0;
       visibility: hidden;
       position: absolute;  
+      z-index: 10;
+    
+    background: #eee;
+    }
+    
+    .desktop .searched{
+      cursor: pointer;
+    }
+    
+    .search-part.change{
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.5 1s;
+    }
+    
+    #myMenu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: none;
+    }
+    
+    /* Style the navigation links */
+    #myMenu li a {
+      padding: 5px;
+      text-decoration: none;
+      color: black;
+      display: block
+    }
+    
+    #myMenu li a:hover {
+      background-color: #eee;
     }
     
     .desktop .searched{

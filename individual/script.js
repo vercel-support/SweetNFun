@@ -4,6 +4,13 @@
 window.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
   
+
+    //inserting nav component in to DOM
+fetch('../../components/nav.html')
+  .then(response => response.text())
+  .then(html => {
+    document.getElementById('nav').innerHTML = html;
+  });
   
 
 const activeImage = document.querySelector(".product-image .active");

@@ -42,8 +42,8 @@
     }
     
     .nav a{
-        margin: 20px 20px;
-    }
+      margin: 5px 5px;
+  }
     
     .nav .logo-container{
         display: flex;
@@ -56,6 +56,10 @@
         justify-content: center;
     }
     
+    .nav .directory a{
+      margin: 20px 20px;
+    
+    }
     .logo-container:hover:after{
       display: -webkit-flex;
       display: flex;
@@ -187,7 +191,7 @@
     
     /* Style the navigation links */
     #myMenu li a {
-      padding: 12px;
+      padding: 5px;
       text-decoration: none;
       color: black;
       display: block

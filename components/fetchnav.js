@@ -2,39 +2,46 @@ window.addEventListener('DOMContentLoaded', (event) => {
   console.log('DOM fully loaded and parsed');
 
 //inserting nav component in to DOM
-fetch('../components/nav.html')
-  .then(response => response.text())
-  .then(html => {
-    document.getElementById('nav').innerHTML = html;
-  });
+// fetch('../components/nav.html')
+//   .then(response => response.text())
+//   .then(html => {
+//     document.getElementById('nav').innerHTML = html;
+//   });
 
 
 //search bar toggle
 
-var searched = document.querySelector('.searched');
-var searchIcon = document.querySelector('.searchimged');
-var searchPart = document.querySelector('.search-part');
-var searchInput = document.querySelector('.search-input');
+const getSearched = () => ({
+  searched : document.querySelector('.searched'),
+  searchIcon : document.querySelector('.searchimged'),
+  searchPart : document.querySelector('.search-part'),
+  searchInput : document.querySelector('.search-input'),
+})
 
-  document.addEventListener('click', function handleClick(event){
+//search bar toggle
+document.addEventListener('click', function handleClick(event){
 
-    var Clicked =searched.contains(event.target);
-    
-    if (Clicked){
-      searchIcon.parentElement.classList.add('change');
-      searchPart.classList.add('change');
-    }
-    
-    if(!Clicked){
-      searchIcon.parentElement.classList.remove('change');
-      searchPart.classList.remove('change');
-    }
+  const {
+    searched, searchIcon, searchPart, searchInput
+  } = getSearched()
 
-    setTimeout(() => {
-      searchInput.focus();
-    }, 0)
+  var Clicked =searched.contains(event.target);
+  
+  if (Clicked){
+    searchIcon.parentElement.classList.add('change');
+    searchPart.classList.add('change');
+  }
+  
+  if(!Clicked){
+    searchIcon.parentElement.classList.remove('change');
+    searchPart.classList.remove('change');
+  }
 
-  })
+  setTimeout(() => {
+    searchInput.focus();
+  }, 0)
+
+})
 //search bar toggle end //
 
 
@@ -83,5 +90,7 @@ button.addEventListener('click', function () {
 });
 
 //nav 'contact' button scroll end///
+
+
 
 });
