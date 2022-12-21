@@ -580,6 +580,7 @@ display: flex;
 justify-content: center;
 }
 
+/* carousel images 750x1200px */
 .carousel{
 max-width: 1200px;
 min-width: 900px;
@@ -593,7 +594,7 @@ box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
 color: #fff;
 text-align: center;
-height: 70vh;
+height: 750px;
 margin: 20px 0;
 line-height: 250px;
 font-size: 90px;
@@ -604,7 +605,7 @@ border-radius: 10px;
 }
 
 .carousel .card img{
-  height: 70vh;
+  height: 750px;
 }
 
 .carousel .card-1 .intro-p {
