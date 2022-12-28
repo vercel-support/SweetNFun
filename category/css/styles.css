@@ -1,3 +1,5 @@
+
+
 /* /// hamburger menu start */
 header {
   border-bottom: 1px solid #eee;
@@ -119,6 +121,10 @@ body {
 .nav .directory a{
   margin: 20px 20px;
 
+}
+
+.nav .directory .search-part a{
+  margin: 5px 20px;
 }
 
 .desktop .brochuresimg{
@@ -411,7 +417,7 @@ h1, p{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: linear-gradient(#FEE687, #F4A7DD);
+    /* background: linear-gradient(#FEE687, #F4A7DD); */
     margin: 0 -7px -7px -7px;
     padding: 0;
     margin-top: 50px;
@@ -424,6 +430,13 @@ h1, p{
   .footer-links > * {
       margin: 0 20px 0 20px;
       text-decoration: none;
+  }
+
+  .footer hr{
+    background-color: lightgrey !important;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 0px !important;
   }
 
 }

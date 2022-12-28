@@ -184,9 +184,11 @@ body {
 
 .nav .directory a{
   margin: 20px 20px;
-
 }
 
+.nav .directory .search-part a{
+  margin: 5px 20px;
+}
 
 .logo-container:hover:after{
   display: -webkit-flex;
@@ -424,6 +426,10 @@ hr{
       margin: 0 20px 0 20px;
       text-decoration: none;
       color:#333;
+    }
+
+    .footer hr{
+      display: none;
     }
   /* footer end /// */
 }

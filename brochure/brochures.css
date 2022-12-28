@@ -132,7 +132,10 @@
 
     .nav .directory a{
       margin: 20px 20px;
-    
+    }
+
+    .nav .directory .search-part a{
+      margin: 5px 20px;
     }
 
     .desktop .brochuresimg{
@@ -428,7 +431,7 @@
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
         z-index: 1; /* Sit on top */
-        padding-top: 300px; /* Location of the box */
+        padding-top: 425px; /* Location of the box */
         left: 0;
         top: 0;
         width: 100%; /* Full width */
@@ -442,11 +445,9 @@
       .modal-content {
         margin: auto;
         display: block;
-        -ms-transform: scale(2.5, 2.5);
-        -webkit-transform: scale(2.5, 2.5);
-        transform: scale(2.5, 2.5);
-        
-        
+        -ms-transform: scale(3.5, 3.5);
+        -webkit-transform: scale(3.5, 3.5);
+        transform: scale(3.5, 3.5);
       }
       
       /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -469,7 +470,7 @@
       
       @keyframes zoom {
         from {transform:scale(0)}
-        to {transform:scale(2.5)}
+        to {transform:scale(3.5)}
       }
       
       /* The Close Button */
@@ -503,7 +504,6 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      background: linear-gradient(#FEE687, #F4A7DD);
       margin: 0 -7px -7px -7px;
       padding: 0;
       margin-top: 50px;
@@ -522,5 +522,11 @@
         margin: 0 20px 0 20px;
         text-decoration: none;
         color:#333;
+    }
+
+    .footer hr{
+      background-color: lightgrey !important;
+      width: 100%;
+      height: 1px;
     }
 }

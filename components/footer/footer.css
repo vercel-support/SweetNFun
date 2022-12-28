@@ -15,3 +15,10 @@
       text-decoration: none;
       color:#333;
     }
+
+  .footer hr{
+    background-color: lightgrey !important;
+    width: 100%;
+    height: 1px;
+    
+  }

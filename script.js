@@ -17,6 +17,9 @@ fetch('/components/footer/footer.html')
 
 
 
+
+
+
 //search bar toggle
 
 

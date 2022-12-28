@@ -1,82 +1,148 @@
 
 *{
-    font-family: 'Gill Sans MT';
-  }
+  font-family: 'Gill Sans MT';
+}
+.logo{
+  width: 80px; 
+  z-index: 10; 
+}
+.logo-container{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
 
-  body{
-    max-width: 100%;
-    overflow-x: hidden;
-  }
+/* /// hamburger menu start */
+header {
+  border-bottom: 1px solid #eee;
+  height: 4rem;
+}
+#menu {
+  background: #333;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  transition-timing-function: cubic-bezier(10,2,3,1);
+  transform: translateX(50rem);
+  top: 0;
+  z-index: 5;
+  transition: 0.5s;
+}
+#menuIcon {
+  display: none;
+}
 
-  .logo{
-    width: 80px; 
-    z-index: 10; 
-  }
-  .logo-container{
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-  }
+#menuIcon:checked ~ #menu {
+  transform: translateX(0rem);
+}
 
-  /* /// hamburger menu start */
-  header {
-    border-bottom: 1px solid #eee;
-    height: 4rem;
-  }
-  #menu {
-    background: #333;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    right: 0;
-    transition-timing-function: cubic-bezier(10,2,3,1);
-    transform: translateX(50rem);
-    top: 0;
-    z-index: 5;
-    transition: 0.5s;
-  }
-  #menuIcon {
-    display: none;
-  }
+#burger {
+  margin: 20px 20px;
+  position: absolute;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  right: 1rem;
+  top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#burger > div {
+  height: 2px;
+  background-color: #000;
+  transition: 0.5s;
+  z-index: 999;
+}
+
+#menuIcon:checked ~ #burger > div {
+background-color: #fff;
+}
+
+#menuIcon:checked ~ #burger > div:nth-child(1) {
+  transform: translateY(15px) rotate(45deg);
+}
+#menuIcon:checked ~ #burger > div:nth-child(2) {
+  opacity: 0;
+}
+#menuIcon:checked ~ #burger > div:nth-child(3) {
+  transform: translateY(-15px) rotate(-45deg);
+}
+/* hamburger menu end /// */
+
+
+@media screen and (min-width: 2px) and (max-width: 768px) {
+
+
+.mobile{
+  margin: 120px 0 0 50px;
+  font-family: sans-serif;
+  color:#eee;
+}
+
+.mobile a{
+  color:#eee;
+  text-decoration: none;
+}
+
+.desktop .productsimg, .desktop .brochures, .desktop .aboutimg, .desktop .contactimg, .desktop .searchimged{
+  display: none;
+}
+
+.desktop .products, .desktop .about, .desktop .contact, .desktop .searched, .desktop #myMenu {
+  display: none;
+}
+
+.mobile .products, .mobile .brochures, .about, .contact, .search{
+  display: flex;
+  margin: 15px;
+  display:flex;
+  align-items: center;
+}
+
+.mobile .productsimg, .brochuresimg, .aboutimg, .contactimg, .searchimg{
+  width: 35px;
+  display: flex;
+  margin-right: 10px;
+}
+
+.menu .directory .mobile{
+  margin: 50px 0 0 50px;
+}
+
+
+
+
+
+
+/* top header breadcrumbs */
+
+.header-bread{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   
-  #menuIcon:checked ~ #menu {
-    transform: translateX(0rem);
-  }
-  
-  #burger {
-    margin: 20px 20px;
-    position: absolute;
-    cursor: pointer;
-    width: 2rem;
-    height: 2rem;
-    right: 1rem;
-    top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-  }
-  
-  #burger > div {
-    height: 2px;
-    background-color: #000;
-    transition: 0.5s;
-    z-index: 999;
-  }
-  
-  #menuIcon:checked ~ #burger > div {
-  background-color: #fff;
-  }
-  
-  #menuIcon:checked ~ #burger > div:nth-child(1) {
-    transform: translateY(15px) rotate(45deg);
-  }
-  #menuIcon:checked ~ #burger > div:nth-child(2) {
-    opacity: 0;
-  }
-  #menuIcon:checked ~ #burger > div:nth-child(3) {
-    transform: translateY(-15px) rotate(-45deg);
-  }
-  /* hamburger menu end /// */
+}
+
+.header-bread a{
+  margin-top: -15px;
+  cursor:pointer;
+  z-index: 2;
+  text-decoration: none;
+  color: #000;
+}
+
+.header-bread h1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  cursor:default;
+}
+
+}
 
 @media screen and (min-width: 769px) {
   html{scroll-behavior:smooth}
@@ -132,7 +198,10 @@
 
     .nav .directory a{
       margin: 20px 20px;
-    
+    }
+
+    .nav .directory .search-part a{
+      margin: 5px 20px;
     }
 
     .desktop .brochuresimg{
@@ -400,7 +469,8 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      background: linear-gradient(#FEE687, #F4A7DD);
+      /* background: linear-gradient(#FEE687, #F4A7DD); */
+      
       margin: 0 -7px -7px -7px;
       padding: 0;
       margin-top: 50px;
@@ -419,5 +489,11 @@
         text-decoration: none;
         color:#333;
 
+    }
+
+    .footer hr{
+      background-color: lightgrey !important;
+      width: 100%;
+      height: 1px;
     }
 }
