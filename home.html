@@ -13,152 +13,72 @@
   
 </head>
 <body>
-    <div class="nav">
-        <input type="checkbox" id="menuIcon">
-        <label id="burger" for="menuIcon">
-            <div></div>
-            <div></div>
-            <div></div>
-        </label>
-
-        <div id="menu">
-            <div class="directory mobile">
-
-
-                <a href="products/products.html" class="products"><img class='productsimg' src='imgs/products2.png'/> All Products</a>
-                <a href="/brochure/brochures.html" class="brochures"><img class='brochuresimg' src='/imgs/brochures.png'/>Brochures</a>
-                <a href="about/about.html" class="about" ><img class='aboutimg' src='imgs/about.png'> About Us</a>
-
-                <a href="#inquiry" class="contact"><img class='contactimg' src='imgs/contact.png'/>Contact Us</a>
-
-                <!-- <h4>Blog</h4> -->
-                <!-- <a class="search"><img class='searchimg' src='imgs/search.png'/></a> -->
-                
-                
-              </div>
-
-        </div>
-        
-        <div >
-            <a class="logo-container" href="#">
-                <img class='logo' src='imgs/logo.png'/>
-            </a>
-        </div>
-        <div class="directory desktop">
-
-
-            <a href="products/products.html" class="products"><img class='productsimg' src='imgs/products.png'/></a>
-            <a href="/brochure/brochures.html" class="brochures"><img class='brochuresimg' src='/imgs/brochures.png'/></a>
-            <a href="about/about.html" class="about"><img class='aboutimg' src='imgs/about.png'/></a>
-            <!-- <h4>Blog</h4> -->
-              
-            <a href="#form-submit" class="contact"><img class='contactimg' src='imgs/contact.png'/></a>
-            <a class="searched"> 
-              <img class="searchimged" src='imgs/search.png'/>
-              
-
-              
-              <div id="form" class="search-part" >
-
-                <input type="text" class="search-input" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in the name of a product">
-
-                <ul id="myMenu" >
-                  <li><a href="/category/jawbreakersBulk.html">Jawbreakers Bulk</a></li>
-                  <li><a href="/category/jellyRG.html">Gourmet Jelly Regular</a></li>
-                  <li><a href="/category/jellyLG.html">Gourmet Jelly Large</a></li>
-                  <li><a href="/category/jumbo.html">Jumbo Sticks</a></li>
-                  <li><a href="/category/krazi.html">Krazi Twist Long sticks</a></li>
-                  <li><a href="/category/LG.html">Sweet Whirls Large</a></li>
-                  <li><a href="/category/XL.html">Sweet Whirls Extra-Large</a></li>
-                  <li><a href="/category/miniBag.html">Mini Sticks bag</a></li>
-                  <li><a href="/category/miniJar.html">Mini Sticks Jar</a></li>
-                  <li><a href="/category/PopDisplays.html">POP Displays</a></li>
-                  <li><a href="/category/roi.html">Roi pop lollipops</a></li>
-                  <li><a href="/category/sw.html">Sweet Whirls Regular</a></li>
-                  <li><a href="/individual/displays/bungalow.html">Candy Bungalow</a></li>
-                  <li><a href="/individual/displays/condo.html">Candy Condo</a></li>
-                  <li><a href="/individual/displays/counterJelly.html">Counter Rack Jelly Display</a></li>
-                  <li><a href="/individual/displays/floorJelly.html">Floor Rack Jelly Display</a></li>
-                  <li><a href="/individual/displays/fourTier.html">4 tier Display</a></li>
-                  <li><a href="/individual/displays/sideBucket.html">side ring bucket</a></li>
-                  <li><a href="/individual/fruitSticks/fruitsticks.html">Fruit Sticks</a></li>
-                  <li><a href="/individual/jawbreakersBulk/king.html">Jawbreaker King</a></li>
-                  <li><a href="/individual/jawbreakersBulk/sourBurstReg.html">Jawbreaker Sour Burst Regular</a></li>
-                  <li><a href="/individual/jawbreakersBulk/twoInchReg.html">Jawbreaker 2 inch Regular</a></li>
-                  <li><a href="/individual/jellyLG/bear.html">Jelly Large Bear</a></li>
-                  <li><a href="/individual/jellyLG/cow.html">Jelly Large Cow</a></li>
-                  <li><a href="/individual/jellyLG/monkey.html">Jelly Large Monkey</a></li>
-                  <li><a href="/individual/jellyLG/mouse.html">Jelly Large Mouse</a></li>
-                  <li><a href="/individual/jellyLG/rabbit.html">Jelly Large Rabbit</a></li>
-                  <li><a href="/individual/jellyLG/tiger.html">Jelly Large Tiger</a></li>
-                  <li><a href="/individual/jellyLG/rose.html">Jelly Large Rose</a></li>
-                  <li><a href="/individual/jellyRG/animal.html">Jelly Regular Animal</a></li>
-                  <li><a href="/individual/jellyRG/aqua.html">Jelly Regular Aqua</a></li>
-                  <li><a href="/individual/jellyRG/clown.html">Jelly Regular Clown</a></li>
-                  <li><a href="/individual/jellyRG/frogWheart.html">Jelly Regular Frog with Heart</a></li>
-                  <li><a href="/individual/jellyRG/fruit.html">Jelly Regular Fruit</a></li>
-                  <li><a href="/individual/jellyRG/heart.html">Jelly Regular Heart</a></li>
-                  <li><a href="/individual/jellyRG/iceCream.html">Jelly Regular Ice Cream</a></li>
-                  <li><a href="/individual/jellyRG/rabbitWheart.html">Jelly Regular Rabbit with Heart</a></li>
-                  <li><a href="/individual/jellyRG/snowman.html">Jelly Regular Snow man</a></li>
-                  <li><a href="/individual/jellyRG/sourAnimal.html">Jelly Regular Sour Animal</a></li>
-                  <li><a href="/individual/jumbo/animal.html">Jumbo Sticks Animal</a></li>
-                  <li><a href="/individual/jumbo/flower.html">Jumbo Sticks Flower</a></li>
-                  <li><a href="/individual/jumbo/fruit.html">Jumbo Sticks Fruit</a></li>
-                  <li><a href="/individual/krz/blueberry.html">Krazi Twist Blueberry</a></li>
-                  <li><a href="/individual/krz/cottoncandy.html">Krazi Twist Cotton Candy</a></li>
-                  <li><a href="/individual/krz/creamsoda.html">Krazi Twist Cream Soda</a></li>
-                  <li><a href="/individual/krz/fruitpunch.html">Krazi Twist Fruit Punch</a></li>
-                  <li><a href="/individual/krz/rainbow.html">Krazi Twist Rainbow</a></li>
-                  <li><a href="/individual/krz/strawberry.html">Krazi Twist Strawberry</a></li>
-                  <li><a href="/individual/LG/blueberry.html">Sweet Whirls Large Blueberry</a></li>
-                  <li><a href="/individual/LG/bubblegum.html">Sweet Whirls Large Bubble gum</a></li>
-                  <li><a href="/individual/LG/cottoncandy.html">Sweet Whirls Large Cotton Candy</a></li>
-                  <li><a href="/individual/LG/creamsoda.html">Sweet Whirls Large Cream Soda</a></li>
-                  <li><a href="/individual/LG/fruitpunch.html">Sweet Whirls Large Fruit Punch</a></li>
-                  <li><a href="/individual/LG/grape.html">Sweet Whirls Large Grape</a></li>
-                  <li><a href="/individual/LG/rainbow.html">Sweet Whirls Large Rainbow</a></li>
-                  <li><a href="/individual/lootbag/surprise.html">Loota Loots surprise loot bag</a></li>
-                  <li><a href="/individual/miniBag/animal.html">Mini Sticks Animal bag</a></li>
-                  <li><a href="/individual/miniBag/flower.html">Mini Sticks Flower bag</a></li>
-                  <li><a href="/individual/miniBag/fruit.html">Mini Sticks Fruit bag</a></li>
-                  <li><a href="/individual/miniJar/animal.html">Mini Sticks Animal Jar</a></li>
-                  <li><a href="/individual/miniJar/flower.html">Mini Sticks Flower Jar</a></li>
-                  <li><a href="/individual/miniJar/fruit.html">Mini Sticks Fruit Jar</a></li>
-                  <li><a href="/individual/roi/roibag.html">Roi pop lollipop bag</a></li>
-                  <li><a href="/individual/roi/roijar.html">Roi pop lollipop Jar</a></li>
-                  <li><a href="/individual/sw/blueberry.html">Sweet Whirls Blueberry</a></li>
-                  <li><a href="/individual/sw/bubblegum.html">Sweet Whirls Bubble gum</a></li>
-                  <li><a href="/individual/sw/candyfloss.html">Sweet Whirls Candy Floss</a></li>
-                  <li><a href="/individual/sw/cherry.html">Sweet Whirls Cherry</a></li>
-                  <li><a href="/individual/sw/creamsoda.html">Sweet Whirls Cream Soda</a></li>
-                  <li><a href="/individual/sw/dalgona.html">Sweet Whirls Dalgona</a></li>
-                  <li><a href="/individual/sw/fruitpunch.html">Sweet Whirls Fruit Punch</a></li>
-                  <li><a href="/individual/sw/grape.html">Sweet Whirls Grape</a></li>
-                  <li><a href="/individual/sw/rainbow.html">Sweet Whirls Rainbow</a></li>
-                  <li><a href="/individual/sw/rainbowsherbet.html">Sweet Whirls Rainbow Sherbet</a></li>
-                  <li><a href="/individual/sw/strawberry.html">Sweet Whirls Strawberry</a></li>
-                  <li><a href="/individual/sw/wheels.html">Sweet Whirls Wheels</a></li>
-                  <li><a href="/individual/XL/blueberry.html">Sweet Whirls extra-large Blueberry</a></li>
-                  <li><a href="/individual/XL/bubblegum.html">Sweet Whirls extra-large bubble gum</a></li>
-                  <li><a href="/individual/XL/cottoncandy.html">Sweet Whirls extra-large Cotton Candy</a></li>
-                  <li><a href="/individual/XL/creamsoda.html">Sweet Whirls extra-large Cream Soda</a></li>
-                  <li><a href="/individual/XL/fruitpunch.html">Sweet Whirls extra-large Fruit Punch</a></li>
-                  <li><a href="/individual/XL/grape.html">Sweet Whirls extra-large Grape</a></li>
-                  <li><a href="/individual/XL/rainbow.html">Sweet Whirls extra-large Rainbow</a></li>
-  
-                </ul>
-                
-
-              </div>
-              
-            </a>
-        </div>
-    </div>
+    
+  <div class="nav">
+    <input type="checkbox" id="menuIcon">
+    <label id="burger" for="menuIcon">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
 
     
+    
+    <div >
+        <a class="logo-container" href="/home.html">
+            <img class='logo' src='../../imgs/logo.png'/>
+        </a>
+    </div>
+
+    <div id="menu">
+      <div class="directory mobile">
+          <a href="../../products/products.html" class="products"><img class='productsimg' src='/imgs/products2.png'/> All Products</a>
+          <a href="../../brochure/brochures.html" class="brochures"><img class='brochuresimg' src='/imgs/brochures.png'/>Brochures</a>
+          <a href="../../about/about.html" class="about" ><img class='aboutimg' src='/imgs/about.png'> About Us</a>
+          <a href="../../home.html#form-submit" class="contact"><img class='contactimg' src='/imgs/contact.png'/>Contact Us</a>
+          
+          
+                          
+          <div id="search2"></div>
+
+          
+
+      </div>
+
+  </div>
+
+    <div class="directory desktop">
+        <a href="../../products/products.html" class="products"><img class='productsimg' src='../../imgs/products.png'/></a>
+        <a href="../../brochure/brochures.html" class="brochures"><img class='brochuresimg' src='../../imgs/brochures.png'/></a>
+        <a href="../../about/about.html" class="about"><img class='aboutimg' src='../../imgs/about.png'/></a>
+        <a href="../../home.html#form-submit" class="contact"><img class='contactimg' src='../../imgs/contact.png'/></a>
+        
+        <!-- <object data="/components/search/search.html"></object> -->
+
+        <div id="search1"></div>
+
+
+        <script>
+          fetch('components/search/search.html')
+            .then(response => response.text())
+            .then(html => {
+              document.getElementById('search1').innerHTML = html;
+              document.getElementById('search2').innerHTML = html;
+
+              // Load and execute the JavaScript file
+              const script = document.createElement('script');
+              script.src = 'script.js';
+              document.body.appendChild(script);
+            });
+        </script>
+        
+    </div>
+</div>
+
+<div></div>
+    
 <div class="hero wrapper">
-  <div class="carousel owl-carousel">
+  <div class="carousel owl-carousel owl-theme">
     
     <div class="card card-1">
       <div class="intro">
@@ -388,21 +308,7 @@
     <img class='bkg' src="imgs/New folder/contact-bkg.jpg"/>
 </div>
        
-<div class="footer">
-
-  <hr/>
-  <div class="footer-links">
-    <a href="#" class="brochures-footer">Home</a>
-    <a href="/products/products.html" class="products-footer">Products</a>
-    <a href="/brochure/brochures.html" class="brochures-footer">Brochures</a>
-    <a href="/about/about.html" class="about-footer">About Us</a>
-    <a href="#form-submit" class="contact-footer">Contact Us</a>
-  </div>
-
-  <div class="copyright">
-    <p>Sweet N Fun Products Ltd. © 2022 All Rights Reserved.</p>
-  </div>
-</div>
+<div id="footer"></div>
 
     <script src="/script.js"> </script>
 </body>

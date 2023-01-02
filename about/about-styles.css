@@ -262,6 +262,15 @@ body {
 
 }
 
+#search .searchimged{
+  margin-top: 10px !important;
+}
+
+#form{
+  margin-top: 30px !important;
+  margin-left: 450px !important;
+}
+
 .search-input{
   width: 350px;
   padding: 16px;

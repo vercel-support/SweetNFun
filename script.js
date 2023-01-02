@@ -1,11 +1,30 @@
+// import search from "/components/search/search.html";
 
 //nav bar insert to DOM
 
-fetch("/components/nav.html")
-  .then(response => response.text())
-  .then(html => {
-    document.getElementById('nav').innerHTML = html;
-  });
+// fetch("/components/nav.html")
+//   .then(response => response.text())
+  
+//   .then(html => {
+//     document.getElementById('nav').innerHTML = html;
+//   });
+
+fetch('../components/nav.html')
+            .then(response => response.text())
+            .then(html => {
+              document.getElementById('nav').innerHTML = html;
+
+          fetch('../components/search/search.html')
+            .then(response => response.text())
+            .then(html => {
+            document.getElementById('search').innerHTML = html;
+            });
+
+              // Load and execute the JavaScript file
+              const script = document.createElement('script');
+              script.src = '../script.js';
+              document.body.appendChild(script);
+            });
 
 //inserting footer component in to DOM
 fetch('/components/footer/footer.html')
@@ -13,8 +32,13 @@ fetch('/components/footer/footer.html')
 .then(html => {
   document.getElementById('footer').innerHTML = html;
 });
-//nav bar insert to DOM end //
 
+//insert search component in to navbar DOM
+// fetch('/components/search/search.html')
+// .then(response => response.text())
+// .then(html => {
+//   document.getElementById('search').innerHTML = html;
+// });
 
 
 
